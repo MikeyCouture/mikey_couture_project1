@@ -128,9 +128,9 @@ header .title{
 .navMenu-Hamburger{
     position: absolute;
     margin: 0;
-    top: 18%;
-    bottom: -20%;
-    left: 80%;
+    top: 20%;
+    bottom: -30%;
+    left: 0%;
     right: 0;
     background: #0000008f;
     border-radius: 2%;
@@ -139,7 +139,7 @@ header .title{
 
 .navMenu-Hamburger ul{
     margin: 0;
-    padding: 40% 0 0 0;
+    padding: 10% 0 0 0;
     text-align: center;
 }
 
@@ -157,6 +157,7 @@ header .title{
     text-transform: uppercase;
     font-weight: bold;
     transition: 0.3s;
+    text-shadow: 1px 1px black;
 }
 
 .navMenu-Hamburger a:hover{
@@ -617,6 +618,14 @@ button{
      .navMenu-Hamburger{
         display: none;
     }
+}
+
+/* min-wdith for hamburger menu */
+@media (min-width: 768px){
+    .navMenu-Hamburger.open{
+    display: none;
+}
+
 }
 
 /* Landscape phone to portrait tablet */
